@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Cost Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='calculators.js') }}"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- First Calculator -->
+        <div id="card1">
+            <h2>Electricity Cost Calculator</h2>
+            <form id="calculationForm">
+                Wattage (in watts): <input type="number" id="wattage"><br>
+                Hours of use: <input type="number" id="hours"><br>
+                Cost per kWh (e.g., 0.45 for 45 ¢/kWh): <input type="number" step="0.01" id="cost_per_kWh"><br>
+                <button type="submit" id="calculateButton">Calculate</button>
+            </form>            
+            <p id="result"></p>
+        </div>
+
+        <!-- Placeholder for Second Calculator -->
+        <div id="card2">
+            <p>Second calculator (placeholder)</p>
+        </div>
+    </div>
+</body>
+</html>

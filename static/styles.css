@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #007bff; /* Techy blue background */
+    color: white;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Adjusted for a 2-column grid */
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; /* Adjust the max-width as needed */
+    margin: auto;
+    /* Add some padding to the top and bottom if you want a little space from the edges */
+}
+
+#card1, #card2{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* If you want the cards to have the same height: */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Rest of your CSS */
+
+#card1 {
+    line-height: 2;
+}
