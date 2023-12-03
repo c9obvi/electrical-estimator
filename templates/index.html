@@ -12,11 +12,11 @@
             <h2>Electricity Cost Calculator</h2>
             <form id="calculationForm">
                 Wattage (in watts): 
-                <br><input type="number" inputmode="numeric" pattern="[0-9]*" id="wattage"><br>
+                <br><input type="number" inputmode="decimal" pattern="[0-9]*" id="wattage"><br>
                 Hours of use: 
-               <br><input type="number" inputmode="numeric" pattern="[0-9]*" id="hours"><br>
+               <br><input type="number" inputmode="decimal" pattern="[0-9]*" id="hours"><br>
                 Cost per kWh: 
-                <br><input type="number" inputmode="numeric" pattern="[0-9]*" step="0.01" id="cost_per_kWh">
+                <br><input type="number" inputmode="decimal" pattern="[0-9]*" step="0.01" id="cost_per_kWh">
                 <br>(e.g., 0.45 for 45 ¢/kWh)<br>
                 <button type="submit" id="calculateButton">Calculate</button>
             </form>            
