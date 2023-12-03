@@ -13,11 +13,5 @@ function displayCost() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('calculationForm');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the actual form submission
-        displayCost();
-    });
-
     document.getElementById('calculateButton').addEventListener('click', displayCost);
 });

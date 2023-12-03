@@ -41,22 +41,12 @@ body {
     line-height: 2;
 }
 
-@media (max-width: 600px) {
+/* Responsive styles for screens less than 600px wide */
+@media (max-width: 900px) {
     .grid-container {
         grid-template-columns: 1fr; /* Stack cards in a single column */
     }
-    /* Optional: Adjust card width or padding here if needed */
-    .card {
-        padding: 10px; /* Example of reducing padding on smaller screens */
-    }
-}
-
-@media (max-width: 1290px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack cards in a single column */
-    }
-    /* Optional: Adjust card width or padding here if needed */
-    .card {
-        padding: 10px; /* Example of reducing padding on smaller screens */
+    #card1, #card2 {
+        margin: 15px; /* Adds margin to the sides of the cards */
     }
 }
