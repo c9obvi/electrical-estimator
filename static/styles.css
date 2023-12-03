@@ -92,15 +92,12 @@ button#calculateButton:hover {
         grid-template-columns: 1fr; /* Stack cards in a single column */
     }
     #card1, #card2 {
-        margin: 15px; /* Adds margin to the sides of the cards */
-    }
-    #card1, #card2 {
         margin: 10px; /* Adds margin around the cards */
         width: calc(100% - 20px); /* Subtract the total margin from the width */
     }
 
     input[type="number"], button#calculateButton {
-        width: 100%; /* Full width */
+        width: 65%; /* Full width */
         padding: 16px; /* Larger padding */
         font-size: 18px; /* Larger text */
         margin: 8px 0; /* Space between inputs */
