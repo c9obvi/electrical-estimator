@@ -70,6 +70,22 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+button#calculateButton {
+    padding: 15px 30px; /* Larger padding makes the button larger */
+    font-size: 20px; /* Larger font size for the text on the button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Changes the mouse pointer to indicate it's clickable */
+    outline: none; /* Removes the outline to keep the design clean */
+}
+
+button#calculateButton:hover {
+    background-color: #0056b3; /* Darker shade on hover for visual feedback */
+}
+
+
 /* Responsive styles for screens less than 600px wide */
 @media (max-width: 1290px) {
     .grid-container {
