@@ -42,7 +42,7 @@ body {
 }
 
 /* Responsive styles for screens less than 600px wide */
-@media (max-width: 900px) {
+@media (max-width: 1290px) {
     .grid-container {
         grid-template-columns: 1fr; /* Stack cards in a single column */
     }
