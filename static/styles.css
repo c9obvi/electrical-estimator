@@ -34,6 +34,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 10px auto;
+    max-width: calc(100%-20px); /* Subtract the total margin from the width */
 }
 
 /* Rest of your CSS */
@@ -56,6 +58,9 @@ input[type="number"] {
     margin: 8px 0; /* Adds some margin above and below the input */
     box-sizing: border-box; /* Ensures padding doesn't affect overall width */
     text-align: center;
+    border: solid 1px #06294f; /* Adds a border around the input */
+    box-shadow: 1px 3px 2px #06294f; /* Adds a shadow inside the input */
+    border-radius: 10px;
 }
 
 /* HIDE ARROWS IN INPUT For Webkit browsers like Chrome and Safari */
@@ -79,6 +84,8 @@ button#calculateButton {
     border-radius: 25px; /* Rounded corners */
     cursor: pointer; /* Changes the mouse pointer to indicate it's clickable */
     outline: none; /* Removes the outline to keep the design clean */
+    box-shadow: 1px 5px 2px #06294f; /* Adds a shadow inside the input */
+
 }
 
 button#calculateButton:hover {
@@ -89,10 +96,12 @@ button#calculateButton:hover {
 /* Responsive styles for screens less than 600px wide */
 @media (max-width: 1290px) {
     .grid-container {
+        align-items: center;
         grid-template-columns: 1fr; /* Stack cards in a single column */
+        margin: 10px; /* Adds margin around the cards */
+
     }
     #card1, #card2 {
-        margin: 10px; /* Adds margin around the cards */
         width: calc(100% - 20px); /* Subtract the total margin from the width */
     }
 
@@ -109,3 +118,8 @@ button#calculateButton:hover {
         margin-top: 16px; /* More space above the button */
     }
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
