@@ -3,7 +3,8 @@ function calculateElectricityCost(wattage, hours, costPerKWh) {
     return kWh * costPerKWh;
 }
 
-function displayCost() {
+function displayCost(event) {
+    event.preventDefault(); // Prevent form from submitting
     const wattage = document.getElementById('wattage').value;
     const hours = document.getElementById('hours').value;
     const costPerKWh = document.getElementById('cost_per_kWh').value;
@@ -13,5 +14,6 @@ function displayCost() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('calculateButton').addEventListener('click', displayCost);
+    const form = document.getElementById('calculationForm');
+    form.addEventListener('submit', displayCost);
 });
