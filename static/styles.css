@@ -41,7 +41,7 @@ body {
     line-height: 2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 920px) {
     .grid-container {
         grid-template-columns: 1fr; /* Stack cards in a single column */
     }
