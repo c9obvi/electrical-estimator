@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='calculators.js') }}"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='electric-favicon.ico') }}"/>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Free online tool to calculate the cost of electricity based on wattage, hours of use, and cost per kWh.">
+    
+    <!-- Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Electricity Cost Calculator" />
+    <meta property="og:description" content="Calculate your electricity costs quickly and easily online and PRIVATELY." />
+    <meta property="og:image" content="{{ url_for('static', filename='social-share-image.png') }}" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Electricity Cost Calculator" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Electricity Cost Calculator">
+    <meta name="twitter:description" content="Calculate your electricity costs quickly and easily online.">
+    <meta name="twitter:image" content="{{ url_for('static', filename='social-share-image.png') }}">
 </head>
 <body>
     <div class="grid-container">
