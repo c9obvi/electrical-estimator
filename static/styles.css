@@ -11,6 +11,7 @@ body {
     background-color: #007bff; /* Techy blue background */
     color: white;
     text-align: center;
+    font-size: large;
 }
 
 .grid-container {
@@ -39,6 +40,34 @@ body {
 
 #card1 {
     line-height: 2;
+}
+
+#calculationForm {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+input[type="number"] {
+    width: 35%; /* Makes the input take up 100% of the form's width */
+    padding: 12px; /* Adds padding inside the input for larger touch area */
+    font-size: 18px; /* Increases the font size */
+    margin: 8px 0; /* Adds some margin above and below the input */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+    text-align: center;
+}
+
+/* HIDE ARROWS IN INPUT For Webkit browsers like Chrome and Safari */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /* Responsive styles for screens less than 600px wide */
